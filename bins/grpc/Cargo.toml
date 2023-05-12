@@ -1,0 +1,19 @@
+[package]
+name = "grpc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+protos = { path = "../../protos" }
+
+configs = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+configs-builder = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+logging = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+traces = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+metrics = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+tonic = { version = "0.8.3" }
+opentelemetry = { version = "0.19.0" }
+async-trait = { version = "0.1.68" }
+tracing = { version = "0.1.37" }
+tokio = { version = "1.27.0", features = ["default", "rt-multi-thread", "macros", "signal"] }
+prost-types = { version = "0.11.9" }
