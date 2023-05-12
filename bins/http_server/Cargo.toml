@@ -1,0 +1,25 @@
+[package]
+name = "http-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+protos = { path = "../../protos" }
+
+configs = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+configs-builder = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+logging = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+traces = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+metrics = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+httpw = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+http-components = {git = "ssh://git@github.com/ralvescosta/ruskit.git",  rev = "v1.23.0"}
+actix-web = {version = "4.3.1"}
+serde = {version = "1.0.159", features = ["derive"]}
+serde_json = {version = "1.0.95"}
+opentelemetry = {version = "0.19.0"}
+async-trait = {version = "0.1.68"}
+tracing = {version = "0.1.37"}
+tokio = {version = "1.27.0", features = ["default", "rt-multi-thread", "macros", "signal"]}
+tonic = {version = "0.8.3"}
+utoipa = {version = "3.2.1", features = ["actix_extras"]}
+validator = {version = "0.16.0"}
