@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package basic;
+
+import "google/protobuf/empty.proto"; 
+
+message Basic {
+  uint64 id = 1;
+}
+
+message CreateRequest {
+
+}
+
+message ListPagedRequest {
+  uint32 limit = 1;
+  uint32 offset = 2;
+}
+
+message ListResponse {
+  repeated Basic data = 1;
+}
+
+service Basics {
+  rpc Create(CreateRequest) returns (google.protobuf.Empty);
+  rpc ListPaged(ListPagedRequest) returns (ListResponse);
+}
+
+
+
+
