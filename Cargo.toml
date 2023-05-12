@@ -1,0 +1,12 @@
+[workspace]
+
+members = [
+  "bins/grpc",
+  "bins/http_server",
+  "protos"
+]
+
+default-memebers = [
+  "bins/grpc",
+  "bins/http_server",
+]
