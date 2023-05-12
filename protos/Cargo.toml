@@ -1,0 +1,12 @@
+[package]
+name = "protos"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+prost = { version = "0.11.9" }
+prost-types = { version = "0.11.9" }
+tonic = { version = "0.8.3" }
+
+[build-dependencies]
+tonic-build = { version = "0.8.4" }
