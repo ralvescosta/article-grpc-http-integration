@@ -5,11 +5,12 @@ use utoipa::OpenApi;
 #[derive(OpenApi)]
 #[openapi(
   paths(
-    basic_ctl::create,
+    basic_ctl::create, basic_ctl::list,
   ),
   components(
     schemas(
       HTTPError,
+      basic_vm::Basic,
       basic_vm::CreateBasicRequest, basic_vm::CreateBasicResponse,
     ),
   ),

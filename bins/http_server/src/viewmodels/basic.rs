@@ -1,6 +1,9 @@
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use utoipa::ToSchema;
 use validator::Validate;
+
+#[derive(Debug, Deserialize, Serialize, Default, ToSchema)]
+pub struct Basic {}
 
 #[derive(Debug, Deserialize, Default, ToSchema, Validate)]
 pub struct CreateBasicRequest {
